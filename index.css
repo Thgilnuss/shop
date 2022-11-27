@@ -4,26 +4,32 @@ body{
     background-size: auto;
     background-position:center;
     background-attachment: fixed;
-    background-color: rgba(245, 151, 36, 0.9);
+    background-color: rgba(245, 151, 36, 0.8);
 }
-body ul{
+body ul li{
+    list-style-type: none;
+}
+body ul div{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgba(32, 32, 32, 0.8)
 }
+.menu{
+    position: fixed;
+}
 body li{
     float: left;
 }
-body li a, .dropbt{
+body ul div li a, .dropbt{
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-body li a:hover, .drop:hover .dropbt{
+body ul div li a:hover, .drop:hover .dropbt{
     background-color: rgba(255, 75, 19, 0.2);
 }
 body li.drop{
@@ -80,9 +86,11 @@ a:hover{
 }
 h1{
     color: #fcf3f0;
+    font-size: 50px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 .new-products button:hover{
-    opacity: 0.7;
+    opacity: 0.8;
 }
 .new-products button{
     background-color: #eceff1;
@@ -93,4 +101,18 @@ h1{
 }
 .new-products p{
     font-family: 'Roboto Mono', monospace;
+}
+.price{
+    color: red;
+    font-size: medium;
+}
+.type{
+    color:#2c98e0;
+    font-size: small;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.name{
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
 }
